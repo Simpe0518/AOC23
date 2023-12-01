@@ -1,6 +1,5 @@
 from asyncio.windows_events import NULL
 
-
 file = open("d1.txt", "r")
 numbers = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 
@@ -22,7 +21,6 @@ for line in file.readlines():
     #print(str(first) + str(last))    
     tot += int(str(first) + str(last))
     last = NULL
-    first = NULL
 
 print(tot)
         
