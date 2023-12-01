@@ -18,7 +18,6 @@ for line in file.readlines():
             if (first == NULL):
                 first = i
         
-    #print(str(first) + str(last))    
     tot += int(str(first) + str(last))
     last = NULL
 
