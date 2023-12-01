@@ -19,7 +19,7 @@ for line in file.readlines():
                 first = i
         
     tot += int(str(first) + str(last))
-    last = NULL
+    first = NULL
 
 print(tot)
         
