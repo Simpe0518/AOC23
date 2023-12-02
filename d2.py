@@ -16,7 +16,7 @@ for line in file:
             n = int(line[i-1])
             if colors[c] < n:     
                 valid = False
-            if  cubes[c] < n:
+            if cubes[c] < n:
                     cubes[c] = n
             
     if valid:
