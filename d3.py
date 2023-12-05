@@ -7,7 +7,12 @@ tot = 0
 
 def has_adjecant(r, c, l, number):
 
-    if r == len(schema[r][c]):
+
+
+    
+
+
+    """if r == len(schema[r][c]):
         if (schema[r][c-l-1:c] + schema[r-1][c-l-1:c] + schema[r+1][c-l-1:c]).count(".") != l*2 + 3:
             return False
 
@@ -17,7 +22,7 @@ def has_adjecant(r, c, l, number):
 
     if (schema[r][c-l-1:c+1] + schema[r-1][c-l-1:c+1] + schema[r+1][c-l-1:c+1]).count(".") != l*2 + 6:
         return False
-    return True
+    return True"""
 
         
     
