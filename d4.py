@@ -28,9 +28,7 @@ for line in file:
     elf_nr = []
     winning_nr = []
 
-#print(tot)
 
-#card_streak = [file[0]]
 
 for card in file:
     line = card.split()
@@ -45,10 +43,9 @@ for card in file:
     our_nr = False
     
     for x in range(len(set(winning_nr) & set(elf_nr))):
-        card_streak.append(file[int(line[1].strip(":"))+1+x])
+        file.insert(, file[int(line[1].strip(":"))-1+x])
         
     elf_nr = []
     winning_nr = []
-    print(card_streak)
 
-print(len(card_streak))
+print("")
