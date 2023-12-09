@@ -9,7 +9,6 @@ directions = file.pop(0).strip()
 file.pop(0)
 paths = {}
 
-
 for l in file:
     l = l.split()
     paths[l[0]] = [l[2].strip(",").strip("("), l[3].strip(")")]
@@ -28,13 +27,9 @@ end_nodes = [n for n in paths.keys() if n[2] == "Z"]
 cntr = 1
 first = []
 
-
 for n in start_nodes:
     i = (find1(n, end_nodes, directions))
     cntr = cntr*i//gcd(cntr,i)
-
-#for i in first:
-        
 
 print(find1("AAA", ["ZZZ"], directions))
 print(cntr)
