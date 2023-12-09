@@ -30,10 +30,11 @@ first = []
 
 
 for n in start_nodes:
-    first.append(find1(n, end_nodes, directions))
+    i = (find1(n, end_nodes, directions))
+    cntr = cntr*i//gcd(cntr,i)
 
-for i in first:
-        cntr = cntr*i//gcd(cntr,i)
+#for i in first:
+        
 
 print(find1("AAA", ["ZZZ"], directions))
 print(cntr)
