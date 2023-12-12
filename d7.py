@@ -42,13 +42,3 @@ for line in file:
     line = line.split()
     ranked.insert(rank_hand(line[0], ranked, len(ranked)//2), line)
 
-#print(ranked)
-
-import webbrowser
-
-for i in range(0, 9):
-    webbrowser.open("https://www.eniro.se/07251112"+  "0" + str(i) + "/vem+ringde")
-
-for i in range(10, 100):
-    webbrowser.open("https://www.eniro.se/07251112"+ str(i) + "/vem+ringde")
-
