@@ -29,10 +29,10 @@ def count_rock(file):
         tot += file[r].count("O") * (len(file) - r)
     return tot
 
-#--- part 1 ---
+#--- part 1 ---#
 print(count_rock(fall_north(file)))
 
-#--- part 2 ---
+#--- part 2 ---#
 while(True):
     for i in range(4):
         file = fall_north(file)
