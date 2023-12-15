@@ -11,11 +11,9 @@ for i in range(256):
 def eval(line):
     cv = 0
     for c in line:
-        cv += ord(c)
-        cv *= 17
-        cv = cv % 256
+        cv = ((cv + ord(c)) * 17) % 256
     return cv
-
+   
 #part 1
 for line in file:
     tot1 += eval(line)
